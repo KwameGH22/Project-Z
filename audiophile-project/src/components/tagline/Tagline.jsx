@@ -1,20 +1,20 @@
 import React from 'react';
-import BestGearMob from '../../assets/shared/mobile/image-best-gear.jpg';
-import BestGearTab from '../../assets/shared/tablet/image-best-gear.jpg';
+
 import BestGearDesk from '../../assets/shared/desktop/image-best-gear.jpg';
 
 const Tagline = () => {
   return (
-    <section className='bestWrapper mx-5 my-5 lg:flex lg:gap-20'>
-        <div className='sm:bg-[url("../../assets/shared/mobile/image-best-gear.jpg")] h-[300px] w-full bg-cover bg-center'>
-            {/* <img src={BestGearMob} alt="" className='w-[327px] h-[300px] md:hidden' />
-            <img src={BestGearTab} alt='' className='md:w-[689px] md:h-[300px] sm:hidden'/> */}
+    <section className='mx-[auto] my-[0] w-[85%] h-auto mt-[20px] pb-[80px] lg:flex lg:gap-5 
+                        md:my-[0] md:mx-[auto] md:w-[85%] md:h-[766px] md:mt-[60px]'>
+        <div className=''>
+            <img src={BestGearDesk} alt="" className='w-full h-[300px] md:w-full md:h-[400px] lg:w-[500px] lg:h-[500px]' />
         </div>
-        <div className='bestContent'>
-            <h2>
-                BRINGING YOU THE <span className='bestSpan'>BEST</span> AUDIO GEAR
+       
+        <div className='bestContent lg:order-1 lg:w-1/2 lg:mt-[15%] '>
+            <h2 className='w-[327px] mx-[auto] my-[0] text-center text-[28px] not-italic font-bold leading-[normal] tracking-[1px] mb-[30px]'>
+                BRINGING YOU THE <span className='bestSpan text-[#D87D4A] text-[28px] not-italic font-bold leading-[normal] tracking-[1px]'>BEST</span> AUDIO GEAR
             </h2>
-            <p className='bestPara'>
+            <p className='bestPara text-center text-[15px] not-italic font-normal leading-[25px] opacity-50'>
                 Located at the heart of New York City, Audiophile is 
                 the premier store for high end headphones, earphones, 
                 speakers, and audio accessories. We have a large showroom 
