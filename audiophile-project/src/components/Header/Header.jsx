@@ -9,6 +9,33 @@ import { useCart } from './CartContext/CartContext';
 
 
 const Header = ({activeLinks}) => {
+
+    const {cartProducts} = useCart()
+
+    console.log(cartProducts,length);
+  
+    // create state for the mobile menu
+    const [openMenu, setOpenMenu] = useState(false);
+    const [isCartOpen, setIsCartOpen] = useState(false)
+  
+    // create a function to toggle the mobile menu
+    const toggleMobileMenu = () => {
+      setOpenMenu(!openMenu)
+    }
+  
+    const toggleCart = () => {
+      setIsCartOpen(!isCartOpen)
+    }
+  
+    // add a function to stop propagation
+    const stopPropagation = (e) => {
+      e.stopPropagation()
+    }
+  
+    const closeCart = () => {
+      setIsCartOpen(false)
+    }
+
   return (
     <header className='header'>
       <div className="headerContent">
