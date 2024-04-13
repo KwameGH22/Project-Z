@@ -4,8 +4,8 @@ import { BsCart } from "react-icons/bs";
 import { NavLink, Link } from 'react-router-dom';
 import Menu from "../ProductsCard/ProductsCard"
 import Cart from '../Cart/Cart';
-import logo from "../../../public/resources/assets/shared/desktop/logo.svg"
-import { useCart } from '../CartContext/CartContext';
+import logo from "../../../assets/shared/desktop/logo.svg"
+import { useCart } from './CartContext/CartContext';
 
 
 const Header = ({activeLinks}) => {
