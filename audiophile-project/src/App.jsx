@@ -1,13 +1,13 @@
 import { useState,useEffect } from 'react'
 
 // import './App.css';
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes, useLocation} from 'react-router-dom';
 import Layout from './components/Layout/Layout'
 import Home from './components/Home/Home'
-import ProductDetails from './pages/ProductDetails/ProductDetails'
 import Checkout from "./pages/Checkout/Checkout"
-import ProductPage from './pages/ProductPage/ProductPage'
 import { CartProvider } from './components/CartContext/CartContext'
+import AudioPage from './pages/AudioPage/AudioPage'
+import AudioDetails from './pages/AudioDetails/AudioDetails'
 
 
 
@@ -24,8 +24,8 @@ function App() {
         <Routes>
           <Route element={<Layout />}>
             <Route path='/' element={<Home />}/>
-            <Route path='/:category' element={<ProductPage/>}/>
-            <Route path='/:category/:id' element={<ProductDetails/>}/>
+            <Route path='/:category' element={<AudioPage/>}/>
+            <Route path='/:category/:id' element={<AudioDetails/>}/>
             <Route path='/checkout' element={<Checkout />}/>
           </Route>
         </Routes>

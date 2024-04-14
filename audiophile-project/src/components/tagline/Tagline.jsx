@@ -1,6 +1,6 @@
 import React from 'react';
 
-import BestGearDesk from '../../assets/shared/desktop/image-best-gear.jpg';
+import BestGearDesk from '../../../public/resources/assets/shared/desktop/image-best-gear.jpg';
 
 const Tagline = () => {
   return (
