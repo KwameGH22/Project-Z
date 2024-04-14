@@ -9,11 +9,11 @@ import { NavLink } from 'react-router-dom'
 
 const Footer = ({ activeLinks }) => {
   return (
-    <footer className="footerWrapper border-[1px] border-[solid] border-[#000] bg-[#000] text-[#fff] h-[654px] relative">
-      <div className="footerContent mx-[auto] my-[0] mt-[50px] w-[85%]">
-        <div className="footerTop">
-          <img src={logo} alt="" className="logo mx-[auto] my-[0] absolute left-[33%] top-[10%]" />
-          <div className="footerLinks mt-[130px]">
+    <footer className="footerWrapper border-[1px] border-[solid] border-[#000] bg-[#000] text-[#fff] h-[654px]  relative">
+      <div className="footerContent mx-[auto] my-[0] mt-[50px] w-[85%] md:[90%] lg:mt-[70px] lg:w-[75%] lg:h-[300px]">
+        <div className="footerTop md:item=center lg:flex lg:justify-between lg:h-[25px] lg:mt-[5px]">
+          <img src={logo} alt="" className="logo mx-[auto] my-[0] absolute left-[33%] top-[10%] " />
+          <div className="footerLinks mt-[130px] lg:flex lg:gap-[20px]">
             <NavLink
               to="/"
               style={({ isActive }) => (isActive ? activeLinks : null)}

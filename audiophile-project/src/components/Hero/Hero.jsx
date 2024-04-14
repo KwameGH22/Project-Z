@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="heroWrapper">
-      <div className="bckImg h-[670px] text-[#fff] bg-[url('../../../resources/assets/home/mobile/image-header.jpg')] md:h-[960px] md:background-image: url('../../../resources/assets/home/tablet/image-header.jpg') lg:bg-[url('../../../resources/assets/home/desktop/image-hero.jpg')] bg-cover bg-[center_-70px] bg-no-repeat relative">
+      <div className="bckImg h-[670px] text-[#fff] bg-[url('../../../resources/assets/home/mobile/image-header.jpg')]
+                       md:h-[960px] md:background-image: url('../../../resources/assets/home/tablet/image-header.jpg') 
+                       lg:bg-[url('../../../resources/assets/home/desktop/image-hero.jpg')] bg-cover bg-[center_-70px]lg:h-[800px] lg:bg-[center_-150px] bg-no-repeat relative">
+                        
         <div className="heroContent absolute top-[50%] left-2/4 -translate-x-1/2 -translate-y-1/2 text-center lg:w-[349px] lg:absolute lg:top-[21%] lg:left-[12.5%]">
           <h2 className="mx-[auto] my-[0] w-[250px] text-center text-[14px] font-normal tracking-[10px] mt-[100px]">NEW PRODUCT</h2>
           <h1 className="mt-[20px] text-[36px] font-bold tracking-[1.3px] leading-[40px] text-center">XX99 MARK II HEADPHONES</h1>
